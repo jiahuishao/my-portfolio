@@ -48,6 +48,8 @@ const Footer: React.FC = () => {
               <li><Link to="/" className="text-gray-600 hover:text-secondary transition-colors">首页</Link></li>
               <li><Link to="/about" className="text-gray-600 hover:text-secondary transition-colors">关于我</Link></li>
               <li><Link to="/projects" className="text-gray-600 hover:text-secondary transition-colors">项目</Link></li>
+              <li><Link to="/photography" className="text-gray-600 hover:text-secondary transition-colors">摄影</Link></li>
+              <li><Link to="/music" className="text-gray-600 hover:text-secondary transition-colors">音乐</Link></li>
               <li><Link to="/contact" className="text-gray-600 hover:text-secondary transition-colors">联系我</Link></li>
             </ul>
           </div>

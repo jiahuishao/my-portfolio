@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Photography from './pages/Photography';
+import MusicPage from './pages/Music';
 
 // Placeholder components until we implement the real ones
 const AboutPlaceholder = () => <div className="container py-20 text-center"><h1 className="text-4xl font-bold">About Page Coming Soon</h1></div>;
@@ -18,6 +20,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/photography" element={<Photography />} />
+          <Route path="/music" element={<MusicPage />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

@@ -46,3 +46,21 @@ export interface Hobby {
   description: string;
   icon: string;
 }
+
+export interface Photo {
+  id: string;
+  title: string;
+  url: string;
+  description?: string;
+  category: string;
+}
+
+export interface MusicTrack {
+  id: string;
+  title: string;
+  description: string;
+  coverUrl: string;
+  audioUrl?: string;
+  platform?: string;
+  platformUrl?: string;
+}

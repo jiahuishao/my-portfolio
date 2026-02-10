@@ -28,6 +28,8 @@ const Navbar: React.FC = () => {
     { name: '首页', path: '/' },
     { name: '关于', path: '/about' },
     { name: '项目', path: '/projects' },
+    { name: '摄影', path: '/photography' },
+    { name: '音乐', path: '/music' },
     { name: '联系我', path: '/contact' },
   ];
 
