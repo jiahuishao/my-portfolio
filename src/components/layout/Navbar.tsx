@@ -24,10 +24,10 @@ const Navbar: React.FC = () => {
   }, [location]);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'About', path: '/about' },
-    { name: 'Projects', path: '/projects' },
-    { name: 'Contact', path: '/contact' },
+    { name: '首页', path: '/' },
+    { name: '关于', path: '/about' },
+    { name: '项目', path: '/projects' },
+    { name: '联系我', path: '/contact' },
   ];
 
   return (
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
             to="/contact"
             className="px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-full hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
           >
-            Hire Me
+            雇佣我
           </Link>
         </div>
 
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
           to="/contact"
           className="mt-4 w-full py-4 bg-primary text-white text-center font-bold text-lg rounded-lg hover:bg-primary/90 transition-colors"
         >
-          Hire Me
+          雇佣我
         </Link>
       </div>
     </nav>

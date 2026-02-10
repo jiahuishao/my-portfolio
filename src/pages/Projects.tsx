@@ -7,10 +7,10 @@ const Projects: React.FC = () => {
   const [filter, setFilter] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'web', label: 'Web Development' },
-    { id: 'mobile', label: 'Mobile Apps' },
-    { id: 'design', label: 'UI/UX Design' },
+    { id: 'all', label: '所有项目' },
+    { id: 'web', label: 'Web 开发' },
+    { id: 'mobile', label: '移动应用' },
+    { id: 'design', label: 'UI/UX 设计' },
   ];
 
   const filteredProjects = filter === 'all' 
@@ -25,9 +25,9 @@ const Projects: React.FC = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">My Portfolio</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">我的作品集</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Explore a collection of my recent projects, spanning web applications, mobile apps, and design concepts.
+          探索我最近的项目，涵盖 Web 应用程序、移动应用和设计概念。
         </p>
       </motion.div>
 
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
 
       {filteredProjects.length === 0 && (
         <div className="text-center py-20">
-          <p className="text-gray-500 text-lg">No projects found in this category.</p>
+          <p className="text-gray-500 text-lg">该类别下暂无项目。</p>
         </div>
       )}
     </div>

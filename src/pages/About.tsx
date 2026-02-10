@@ -15,18 +15,17 @@ const About: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            About <span className="text-primary">Me</span>
+            关于 <span className="text-primary">我</span>
           </h1>
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-            {personalInfo.title} based in {personalInfo.location}
+            {personalInfo.title} 位于 {personalInfo.location}
           </h2>
           <p className="text-gray-600 leading-relaxed mb-6">
             {personalInfo.bio}
           </p>
           <p className="text-gray-600 leading-relaxed">
-            I'm passionate about building digital products that solve real-world problems. 
-            When I'm not coding, you can find me exploring new technologies, contributing to open source, 
-            or enjoying a good cup of coffee while sketching new design ideas.
+            我热衷于构建解决现实世界问题的数字产品。
+            当我不写代码时，你会发现我在探索新技术、为开源做贡献，或者一边喝着好咖啡一边构思新的设计理念。
           </p>
         </motion.div>
         
@@ -56,9 +55,9 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">技术技能</h2>
           <p className="text-gray-600 max-w-2xl">
-            My technical toolkit is diverse, ranging from modern frontend frameworks to robust backend solutions.
+            我的技术工具箱多种多样，从现代前端框架到强大的后端解决方案。
           </p>
         </motion.div>
 
@@ -78,9 +77,9 @@ const About: React.FC = () => {
           viewport={{ once: true }}
           className="mb-10"
         >
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Experience & Education</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">经验与教育</h2>
           <p className="text-gray-600 max-w-2xl">
-            A timeline of my professional journey and educational background.
+            我的职业生涯和教育背景的时间轴。
           </p>
         </motion.div>
 

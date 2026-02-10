@@ -42,9 +42,9 @@ const Contact: React.FC = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-16"
       >
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">保持联系</h1>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Have a project in mind or want to collaborate? Feel free to reach out.
+          有项目想法或想要合作？欢迎随时联系。
         </p>
       </motion.div>
 
@@ -57,14 +57,14 @@ const Contact: React.FC = () => {
           className="lg:col-span-1 space-y-8"
         >
           <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-6">联系方式</h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-blue-50 text-primary rounded-lg">
                   <Mail className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Email</h4>
+                  <h4 className="font-medium text-gray-900">电子邮件</h4>
                   <a href={`mailto:${personalInfo.email}`} className="text-gray-600 hover:text-primary transition-colors">
                     {personalInfo.email}
                   </a>
@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Phone</h4>
+                  <h4 className="font-medium text-gray-900">电话</h4>
                   <p className="text-gray-600">+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -86,14 +86,14 @@ const Contact: React.FC = () => {
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-900">Location</h4>
+                  <h4 className="font-medium text-gray-900">地址</h4>
                   <p className="text-gray-600">{personalInfo.location}</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-100">
-              <h4 className="font-medium text-gray-900 mb-4">Follow Me</h4>
+              <h4 className="font-medium text-gray-900 mb-4">关注我</h4>
               <div className="flex gap-4">
                 <a href="#" className="p-3 bg-slate-50 text-gray-600 rounded-lg hover:bg-primary hover:text-white transition-all">
                   <Github className="h-5 w-5" />
@@ -117,7 +117,7 @@ const Contact: React.FC = () => {
           className="lg:col-span-2"
         >
           <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm">
-            <h3 className="text-xl font-bold text-gray-900 mb-6">Send a Message</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-6">发送消息</h3>
             
             {isSuccess ? (
               <motion.div
@@ -128,22 +128,22 @@ const Contact: React.FC = () => {
                 <div className="inline-flex p-4 bg-green-100 text-green-600 rounded-full mb-4">
                   <CheckCircle className="h-8 w-8" />
                 </div>
-                <h4 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h4>
+                <h4 className="text-2xl font-bold text-gray-900 mb-2">消息已发送！</h4>
                 <p className="text-gray-600">
-                  Thank you for reaching out. I'll get back to you as soon as possible.
+                  感谢您的联系。我会尽快回复您。
                 </p>
                 <button 
                   onClick={() => setIsSuccess(false)}
                   className="mt-6 px-6 py-2 bg-white border border-gray-200 text-gray-600 font-medium rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                  Send Another Message
+                  发送另一条消息
                 </button>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium text-gray-700">Your Name</label>
+                    <label htmlFor="name" className="text-sm font-medium text-gray-700">您的姓名</label>
                     <input
                       type="text"
                       id="name"
@@ -152,11 +152,11 @@ const Contact: React.FC = () => {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                      placeholder="John Doe"
+                      placeholder="张三"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium text-gray-700">Your Email</label>
+                    <label htmlFor="email" className="text-sm font-medium text-gray-700">您的邮箱</label>
                     <input
                       type="email"
                       id="email"
@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium text-gray-700">Subject</label>
+                  <label htmlFor="subject" className="text-sm font-medium text-gray-700">主题</label>
                   <input
                     type="text"
                     id="subject"
@@ -180,12 +180,12 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                    placeholder="Project Inquiry"
+                    placeholder="项目咨询"
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium text-gray-700">Message</label>
+                  <label htmlFor="message" className="text-sm font-medium text-gray-700">消息内容</label>
                   <textarea
                     id="message"
                     name="message"
@@ -194,7 +194,7 @@ const Contact: React.FC = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all resize-none"
-                    placeholder="Tell me about your project..."
+                    placeholder="请告诉我关于您的项目..."
                   />
                 </div>
                 
@@ -204,10 +204,10 @@ const Contact: React.FC = () => {
                   className="w-full md:w-auto px-8 py-4 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                 >
                   {isSubmitting ? (
-                    <>Processing...</>
+                    <>发送中...</>
                   ) : (
                     <>
-                      Send Message <Send className="h-4 w-4" />
+                      发送消息 <Send className="h-4 w-4" />
                     </>
                   )}
                 </button>
