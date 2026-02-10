@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Code2 } from 'lucide-react';
 import { cn } from '../../lib/utils';
+import { personalInfo } from '../../data/profile';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +41,7 @@ const Navbar: React.FC = () => {
       <div className="container px-4 md:px-6 mx-auto flex justify-between items-center">
         <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
           <Code2 className="h-8 w-8 text-secondary" />
-          <span>Alex<span className="text-secondary">Morgan</span></span>
+          <span>Shao<span className="text-secondary">Jiahui</span></span>
         </Link>
 
         {/* Desktop Menu */}
@@ -63,7 +64,7 @@ const Navbar: React.FC = () => {
             to="/contact"
             className="px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-full hover:bg-primary/90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200"
           >
-            雇佣我
+            联系我
           </Link>
         </div>
 
@@ -100,7 +101,7 @@ const Navbar: React.FC = () => {
           to="/contact"
           className="mt-4 w-full py-4 bg-primary text-white text-center font-bold text-lg rounded-lg hover:bg-primary/90 transition-colors"
         >
-          雇佣我
+          联系我
         </Link>
       </div>
     </nav>

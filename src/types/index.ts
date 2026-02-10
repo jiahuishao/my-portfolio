@@ -40,3 +40,9 @@ export interface PersonalInfo {
   location: string;
   socials: SocialLink[];
 }
+
+export interface Hobby {
+  name: string;
+  description: string;
+  icon: string;
+}

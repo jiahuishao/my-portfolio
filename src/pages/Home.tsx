@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Code, Layout as LayoutIcon, Smartphone } from 'lucide-react';
+import { ArrowRight, BarChart, Lightbulb, Users } from 'lucide-react';
 import ProjectCard from '../components/ui/ProjectCard';
 import { projects } from '../data/projects';
 import { personalInfo } from '../data/profile';
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-6">
-              接受自由职业委托
+              产品经理作品集
             </span>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 mb-6">
               你好，我是 <span className="text-primary">{personalInfo.name}</span>
@@ -56,19 +56,19 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              icon: <LayoutIcon className="h-8 w-8 text-blue-500" />,
-              title: "Web 开发",
-              desc: "使用现代框架构建快速、响应式和可访问的网站。"
+              icon: <Lightbulb className="h-8 w-8 text-blue-500" />,
+              title: "产品规划",
+              desc: "从创意到落地，打造有价值的产品。专注于解决核心痛点。"
             },
             {
-              icon: <Smartphone className="h-8 w-8 text-green-500" />,
-              title: "移动端友好",
-              desc: "确保您的应用程序在所有设备上都能完美运行。"
+              icon: <Users className="h-8 w-8 text-green-500" />,
+              title: "用户体验",
+              desc: "深入洞察用户需求，提供卓越、流畅的使用体验。"
             },
             {
-              icon: <Code className="h-8 w-8 text-purple-500" />,
-              title: "整洁代码",
-              desc: "遵循最佳实践编写可维护、可扩展和高效的代码。"
+              icon: <BarChart className="h-8 w-8 text-purple-500" />,
+              title: "数据驱动",
+              desc: "用数据指导决策，通过分析持续优化产品迭代。"
             }
           ].map((service, index) => (
             <motion.div
